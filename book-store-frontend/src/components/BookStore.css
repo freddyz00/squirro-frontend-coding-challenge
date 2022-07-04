@@ -1,0 +1,121 @@
+p {
+    margin: 0.15rem 0;
+}
+
+h2, h3 {
+    margin: 0.5rem 0;
+}
+
+.book-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 700px;
+    border: 1px solid #e5e5e5;
+    margin: 2rem auto;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-store__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.book-store__details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+.book-store__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+    object-fit: cover;
+
+}
+
+.book-store__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.book-store__header h2 {
+    font-size: 1.75rem;
+    margin-top: 0;
+    color: #e05d29;
+}
+
+.book-store__rating {
+    font-size: 2rem;
+    user-select: none;
+    cursor: pointer;
+    color: #aaaaaa;
+    line-height: 1rem;
+}
+
+.book-store__rating--active {
+    color: #ffe234
+}
+
+.book-store__books h3 {
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.book-store__book-info {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+.book-store__book-info p:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.book-store__book-info p {
+    flex: 1;
+    text-align: left;
+}
+
+.book-store__bottom {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-store__bottom p {
+    margin-right: 1rem;
+}
+
+.book-store__flag {
+    height: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .book-store__top {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .book-store__header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .book-store__details {
+        margin-left: 2rem;
+    }
+}
